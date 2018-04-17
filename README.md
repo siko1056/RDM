@@ -65,224 +65,40 @@ models, you may need multiple precision version of SDP solver, like
 Randomly chosen from [[1]](#ref1).  You should add the core energy to the
 optimal to reproduce the paper's results.
 
-| Problems (dat-s, gzip'ed) |     result (gzip'ed)    | rank | core energy | comment |
-| ------------------------- | ----------------------- | :--: | :---------: | ------- |
-| C.3P.DZ.pqg.dat-s.gz      | C.3P.DZ.pqg.result.gz   |  20  |         0.0 |     PQG |
-| C.3P.DZ.pqgt1.dat-s.gz    | C.3P.DZ.pqgt1.result.gz |  20  |         0.0 |   PQGT1 |
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="C.3P.DZ.pqgt1t2.dat-s.gz">C.3P.DZ.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="C.3P.DZ.pqgt1t2.result.gz">C.3P.DZ.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 20 </P> </TD>
-<TD WIDTH="16%">        <P> 0.0 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="C.3P.DZ.pqgt1t2p.dat-s.gz">C.3P.DZ.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="C.3P.DZ.pqgt1t2p.result.gz">C.3P.DZ.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 20 </P> </TD>
-<TD WIDTH="16%">        <P> 0.0 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2' </P> </TD>
-</TR>
-
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="Ne.1S.DZ.pqg.dat-s.gz">Ne.1S.DZ.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="Ne.1S.DZ.pqg.result.gz">Ne.1S.DZ.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 20 </P> </TD>
-<TD WIDTH="16%">        <P> 0.0 </P> </TD>
-<TD WIDTH="16%">        <P> PQG </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="Ne.1S.DZ.pqgt1.dat-s.gz">Ne.1S.DZ.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="Ne.1S.DZ.pqgt1.result.gz">Ne.1S.DZ.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 20 </P> </TD>
-<TD WIDTH="16%">        <P> 0.0 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="Ne.1S.DZ.pqgt1t2.dat-s.gz">Ne.1S.DZ.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="Ne.1S.DZ.pqgt1t2.result.gz">Ne.1S.DZ.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 20 </P> </TD>
-<TD WIDTH="16%">        <P> 0.0 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="Ne.1S.DZ.pqgt1t2p.dat-s.gz">Ne.1S.DZ.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="Ne.1S.DZ.pqgt1t2p.result.gz">Ne.1S.DZ.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 20 </P> </TD>
-<TD WIDTH="16%">        <P> 0.0 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2' </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="O2+.2Pig.STO6G.pqg.dat-s.gz">O2+.2Pig.STO6G.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="O2+.2Pig.STO6G.pqg.result.gz">O2+.2Pig.STO6G.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 20 </P> </TD>
-<TD WIDTH="16%">        <P> 3.033620918667+01 </P> </TD>
-<TD WIDTH="16%">        <P> PQG </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="O2+.2Pig.STO6G.pqgt1.dat-s.gz">O2+.2Pig.STO6G.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="O2+.2Pig.STO6G.pqgt1.result.gz">O2+.2Pig.STO6G.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 20 </P> </TD>
-<TD WIDTH="16%">        <P> 3.033620918667e+01 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="O2+.2Pig.STO6G.pqgt1t2.dat-s.gz">O2+.2Pig.STO6G.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="O2+.2Pig.STO6G.pqgt1t2.result.gz">O2+.2Pig.STO6G.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 20 </P> </TD>
-<TD WIDTH="16%">        <P> 3.033620918667e+01 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="O2+.2Pig.STO6G.pqgt1t2p.dat-s.gz">O2+.2Pig.STO6G.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="O2+.2Pig.STO6G.pqgt1t2p.result.gz">O2+.2Pig.STO6G.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 20 </P> </TD>
-<TD WIDTH="16%">        <P> 3.033620918667e+01 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2' </P> </TD>
-</TR>
-
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="NH.1Delta.DZ.pqg.dat-s.gz">NH.1Delta.DZ.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="NH.1Delta.DZ.pqg.result.gz">NH.1Delta.DZ.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 24 </P> </TD>
-<TD WIDTH="16%">        <P> 3.582091425394e+00 </P> </TD>
-<TD WIDTH="16%">        <P> PQG </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="NH.1Delta.DZ.pqgt1.dat-s.gz">NH.1Delta.DZ.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="NH.1Delta.DZ.pqgt1.result.gz">NH.1Delta.DZ.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 24 </P> </TD>
-<TD WIDTH="16%">        <P> 3.582091425394e+00 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="NH.1Delta.DZ.pqgt1t2.dat-s.gz">NH.1Delta.DZ.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="NH.1Delta.DZ.pqgt1t2.result.gz">NH.1Delta.DZ.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 24 </P> </TD>
-<TD WIDTH="16%">        <P> 3.582091425394e+00 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="NH.1Delta.DZ.pqgt1t2p.dat-s.gz">NH.1Delta.DZ.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="NH.1Delta.DZ.pqgt1t2p.result.gz">NH.1Delta.DZ.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 24 </P> </TD>
-<TD WIDTH="16%">        <P> 3.582091425394e+00 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2' </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="CH.2Pir.DZ.pqg.dat-s.gz">CH.2Pir.DZ.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="CH.2Pir.DZ.pqg.result.gz">CH.2Pir.DZ.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 24 </P> </TD>
-<TD WIDTH="16%">        <P> 2.835131256362e+00 </P> </TD>
-<TD WIDTH="16%">        <P>PQG </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="CH.2Pir.DZ.pqgt1.dat-s.gz">CH.2Pir.DZ.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="CH.2Pir.DZ.pqgt1.result.gz">CH.2Pir.DZ.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 24 </P> </TD>
-<TD WIDTH="16%">        <P> 2.835131256362e+00 </P> </TD>
-<TD WIDTH="16%">        <P>PQGT1 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="CH.2Pir.DZ.pqgt1t2.dat-s.gz">CH.2Pir.DZ.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="CH.2Pir.DZ.pqgt1t2.result.gz">CH.2Pir.DZ.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 24 </P> </TD>
-<TD WIDTH="16%">        <P> 2.835131256362e+00 </P> </TD>
-<TD WIDTH="16%">        <P>PQGT1T2 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="CH.2Pir.DZ.pqgt1t2p.dat-s.gz">CH.2Pir.DZ.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="CH.2Pir.DZ.pqgt1t2p.result.gz">CH.2Pir.DZ.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 24 </P> </TD>
-<TD WIDTH="16%">        <P> 2.835131256362e+00 </P> </TD>
-<TD WIDTH="16%">        <P>PQGT1T2' </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="HF.1Sigma+.DZ.pqg.dat-s.gz">HF.1Sigma+.DZ.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="HF.1Sigma+.DZ.pqg.result.gz">HF.1Sigma+.DZ.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 24 </P> </TD>
-<TD WIDTH="16%">        <P> 5.194757507570e+00 </P> </TD>
-<TD WIDTH="16%">        <P>PQG </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="HF.1Sigma+.DZ.pqgt1.dat-s.gz">HF.1Sigma+.DZ.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="HF.1Sigma+.DZ.pqgt1.result.gz">HF.1Sigma+.DZ.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 24 </P> </TD>
-<TD WIDTH="16%">        <P> 5.194757507570e+00 </P> </TD>
-<TD WIDTH="16%">        <P>PQGT1 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="HF.1Sigma+.DZ.pqgt1t2.dat-s.gz">HF.1Sigma+.DZ.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="HF.1Sigma+.DZ.pqgt1t2.result.gz">HF.1Sigma+.DZ.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 24 </P> </TD>
-<TD WIDTH="16%">        <P> 5.194757507570e+00 </P> </TD>
-<TD WIDTH="16%">        <P>PQGT1T2 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="HF.1Sigma+.DZ.pqgt1t2p.dat-s.gz">HF.1Sigma+.DZ.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="HF.1Sigma+.DZ.pqgt1t2p.result.gz">HF.1Sigma+.DZ.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 24 </P> </TD>
-<TD WIDTH="16%">        <P> 5.194757507570e+00 </P> </TD>
-<TD WIDTH="16%">        <P>PQGT1T2' </P> </TD>
-</TR>
-
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="F-.1S.DZ+d.pqg.dat-s.gz">F-.1S.DZ+d.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="F-.1S.DZ+d.pqg.result.gz">F-.1S.DZ+d.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 26 </P> </TD>
-<TD WIDTH="16%">        <P> 0.0 </P> </TD>
-<TD WIDTH="16%">        <P> PQG </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="F-.1S.DZ+d.pqgt1.dat-s.gz">F-.1S.DZ+d.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="F-.1S.DZ+d.pqgt1.result.gz">F-.1S.DZ+d.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 26 </P> </TD>
-<TD WIDTH="16%">        <P> 0.0 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="F-.1S.DZ+d.pqgt1t2.dat-s.gz">F-.1S.DZ+d.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="F-.1S.DZ+d.pqgt1t2.result.gz">F-.1S.DZ+d.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 26 </P> </TD>
-<TD WIDTH="16%">        <P> 0.0 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="F-.1S.DZ+d.pqgt1t2p.dat-s.gz">F-.1S.DZ+d.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="F-.1S.DZ+d.pqgt1t2p.result.gz">F-.1S.DZ+d.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 26 </P> </TD>
-<TD WIDTH="16%">        <P> 0.0 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2' </P> </TD>
-</TR>
-
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="H2O.1A1.DZ.pqg.dat-s.gz">H2O.1A1.DZ.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="H2O.1A1.DZ.pqg.result.gz">H2O.1A1.DZ.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 28 </P> </TD>
-<TD WIDTH="16%">        <P> 9.188690490978e+00 </P> </TD>
-<TD WIDTH="16%">        <P> PQG </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="H2O.1A1.DZ.pqgt1.dat-s.gz">H2O.1A1.DZ.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="H2O.1A1.DZ.pqgt1.result.gz">H2O.1A1.DZ.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 28 </P> </TD>
-<TD WIDTH="16%">        <P> 9.188690490978e+00 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="H2O.1A1.DZ.pqgt1t2.dat-s.gz">H2O.1A1.DZ.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="H2O.1A1.DZ.pqgt1t2.result.gz">H2O.1A1.DZ.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 28 </P> </TD>
-<TD WIDTH="16%">        <P> 9.188690490978e+00 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2 </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="H2O.1A1.DZ.pqgt1t2p.dat-s.gz">H2O.1A1.DZ.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="H2O.1A1.DZ.pqgt1t2p.result.gz">H2O.1A1.DZ.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 28 </P> </TD>
-<TD WIDTH="16%">        <P> 9.188690490978e+00 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2' </P> </TD>
-</TR>
+| Problems (dat-s, gzip'ed)        |        result (gzip'ed)           | rank |     core energy    | comment  |
+| -------------------------------- | --------------------------------- | :--: | -----------------: | -------- |
+| C.3P.DZ.pqg.dat-s.gz             | C.3P.DZ.pqg.result.gz             |  20  | 0.0                | PQG      |
+| C.3P.DZ.pqgt1.dat-s.gz           | C.3P.DZ.pqgt1.result.gz           |  20  | 0.0                | PQGT1    |
+| C.3P.DZ.pqgt1t2.dat-s.gz         | C.3P.DZ.pqgt1t2.result.gz         |  20  | 0.0                | PQGT1T2  |
+| C.3P.DZ.pqgt1t2p.dat-s.gz        | C.3P.DZ.pqgt1t2p.result.gz        |  20  | 0.0                | PQGT1T2' |
+| Ne.1S.DZ.pqg.dat-s.gz            | Ne.1S.DZ.pqg.result.gz            |  20  | 0.0                | PQG      |
+| Ne.1S.DZ.pqgt1.dat-s.gz          | Ne.1S.DZ.pqgt1.result.gz          |  20  | 0.0                | PQGT1    |
+| Ne.1S.DZ.pqgt1t2.dat-s.gz        | Ne.1S.DZ.pqgt1t2.result.gz        |  20  | 0.0                | PQGT1T2  |
+| Ne.1S.DZ.pqgt1t2p.dat-s.gz       | Ne.1S.DZ.pqgt1t2p.result.gz       |  20  | 0.0                | PQGT1T2' |
+| O2+.2Pig.STO6G.pqg.dat-s.gz      | O2+.2Pig.STO6G.pqg.result.gz      |  20  | 3.033620918667e+01 | PQG      |
+| O2+.2Pig.STO6G.pqgt1.dat-s.gz    | O2+.2Pig.STO6G.pqgt1.result.gz    |  20  | 3.033620918667e+01 | PQGT1    |
+| O2+.2Pig.STO6G.pqgt1t2.dat-s.gz  | O2+.2Pig.STO6G.pqgt1t2.result.gz  |  20  | 3.033620918667e+01 | PQGT1T2  |
+| O2+.2Pig.STO6G.pqgt1t2p.dat-s.gz | O2+.2Pig.STO6G.pqgt1t2p.result.gz |  20  | 3.033620918667e+01 | PQGT1T2' |
+| NH.1Delta.DZ.pqg.dat-s.gz        | NH.1Delta.DZ.pqg.result.gz        |  24  | 3.582091425394e+00 | PQG      |
+| NH.1Delta.DZ.pqgt1.dat-s.gz      | NH.1Delta.DZ.pqgt1.result.gz      |  24  | 3.582091425394e+00 | PQGT1    |
+| NH.1Delta.DZ.pqgt1t2.dat-s.gz    | NH.1Delta.DZ.pqgt1t2.result.gz    |  24  | 3.582091425394e+00 | PQGT1T2  |
+| NH.1Delta.DZ.pqgt1t2p.dat-s.gz   | NH.1Delta.DZ.pqgt1t2p.result.gz   |  24  | 3.582091425394e+00 | PQGT1T2' |
+| CH.2Pir.DZ.pqg.dat-s.gz          | CH.2Pir.DZ.pqg.result.gz          |  24  | 2.835131256362e+00 | PQG      |
+| CH.2Pir.DZ.pqgt1.dat-s.gz        | CH.2Pir.DZ.pqgt1.result.gz        |  24  | 2.835131256362e+00 | PQGT1    |
+| CH.2Pir.DZ.pqgt1t2.dat-s.gz      | CH.2Pir.DZ.pqgt1t2.result.gz      |  24  | 2.835131256362e+00 | PQGT1T2  |
+| CH.2Pir.DZ.pqgt1t2p.dat-s.gz     | CH.2Pir.DZ.pqgt1t2p.result.gz     |  24  | 2.835131256362e+00 | PQGT1T2' |
+| HF.1Sigma+.DZ.pqg.dat-s.gz       | HF.1Sigma+.DZ.pqg.result.gz       |  24  | 5.194757507570e+00 | PQG      |
+| HF.1Sigma+.DZ.pqgt1.dat-s.gz     | HF.1Sigma+.DZ.pqgt1.result.gz     |  24  | 5.194757507570e+00 | PQGT1    |
+| HF.1Sigma+.DZ.pqgt1t2.dat-s.gz   | HF.1Sigma+.DZ.pqgt1t2.result.gz   |  24  | 5.194757507570e+00 | PQGT1T2  |
+| HF.1Sigma+.DZ.pqgt1t2p.dat-s.gz  | HF.1Sigma+.DZ.pqgt1t2p.result.gz  |  24  | 5.194757507570e+00 | PQGT1T2' |
+| F-.1S.DZ+d.pqg.dat-s.gz          | F-.1S.DZ+d.pqg.result.gz          |  26  | 0.0                | PQG      |
+| F-.1S.DZ+d.pqgt1.dat-s.gz        | F-.1S.DZ+d.pqgt1.result.gz        |  26  | 0.0                | PQGT1    |
+| F-.1S.DZ+d.pqgt1t2.dat-s.gz      | F-.1S.DZ+d.pqgt1t2.result.gz      |  26  | 0.0                | PQGT1T2  |
+| F-.1S.DZ+d.pqgt1t2p.dat-s.gz     | F-.1S.DZ+d.pqgt1t2p.result.gz     |  26  | 0.0                | PQGT1T2' |
+| H2O.1A1.DZ.pqg.dat-s.gz          | H2O.1A1.DZ.pqg.result.gz          |  28  | 9.188690490978e+00 | PQG      |
+| H2O.1A1.DZ.pqgt1.dat-s.gz        | H2O.1A1.DZ.pqgt1.result.gz        |  28  | 9.188690490978e+00 | PQGT1    |
+| H2O.1A1.DZ.pqgt1t2.dat-s.gz      | H2O.1A1.DZ.pqgt1t2.result.gz      |  28  | 9.188690490978e+00 | PQGT1T2  |
+| H2O.1A1.DZ.pqgt1t2p.dat-s.gz     | H2O.1A1.DZ.pqgt1t2p.result.gz     |  28  | 9.188690490978e+00 | PQGT1T2' |
 
 
 ### 1D Hubbard model with high correlation limits
