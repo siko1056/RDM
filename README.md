@@ -5,6 +5,9 @@
 > [chat95@mac.com](mailto:chat95@mac.com) hosted at
 > http://nakatamaho.riken.jp/rdmsdp/sdp_rdm.html.
 
+> The `data` directory contains only the eight largest problem Instances
+> from the first table.
+
 ## Introduction
 
 The RDM method is promising method, using 2-RDM as a basic variable and
