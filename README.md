@@ -1,7 +1,7 @@
 # The RDM method problems in SDPA sparse format
 
 > This GitHub repository is a "modern" presentation of the original RDM
-> library by Nakata, Maho <[maho@riken.jp](mailto:maho@riken.jp) or
+> library by Nakata, Maho [maho@riken.jp](mailto:maho@riken.jp) or
 > [chat95@mac.com](mailto:chat95@mac.com) hosted at
 > http://nakatamaho.riken.jp/rdmsdp/sdp_rdm.html.
 
