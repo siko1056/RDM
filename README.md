@@ -66,7 +66,7 @@ Randomly chosen from [[1]](#ref1).  You should add the core energy to the
 optimal to reproduce the paper's results.
 
 | Problems (dat-s, gzip'ed)        |        result (gzip'ed)           | rank |     core energy    | comment  |
-| -------------------------------- | --------------------------------- | :--: | -----------------: | -------- |
+| -------------------------------- | --------------------------------- | :--: | ------------------ | -------- |
 | C.3P.DZ.pqg.dat-s.gz             | C.3P.DZ.pqg.result.gz             |  20  | 0.0                | PQG      |
 | C.3P.DZ.pqgt1.dat-s.gz           | C.3P.DZ.pqgt1.result.gz           |  20  | 0.0                | PQGT1    |
 | C.3P.DZ.pqgt1t2.dat-s.gz         | C.3P.DZ.pqgt1t2.result.gz         |  20  | 0.0                | PQGT1T2  |
@@ -108,266 +108,41 @@ problems are solved in the referenced paper.  You may need multiple precision
 version of SDP solver like
 [SDPA-GMP, SDPA-QD, or SDPA-DD](http://sdpa.indsys.chuo-u.ac.jp/sdpa/).
 
-<TABLE WIDTH="80%" BORDER=1 CELLPADDING=2 CELLSPACING=2>
-<TR VALIGN=TOP>
-<TD WIDTH="16%"><p>PROBLEMS (dat-s, gzip'ed) </p></TD>
-<TD WIDTH="16%"><p>result (gzip'ed) </p></TD>
-<TD WIDTH="16%"><p>rank</p></TD>
-<TD WIDTH="16%"><P>U/t</P>
-<TD WIDTH="16%"><P>comment</P>
-</TD>
-</TR>
-
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.1000.0.pqg.dat-s.gz">hubbard_X4N4p.1000.0.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.1000.0.pqg.result.gz">hubbard_X4N4p.1000.0.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 8 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=1000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQG</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.1000.0.pqgt1.dat-s.gz">hubbard_X4N4p.1000.0.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.1000.0.pqgt1.result.gz">hubbard_X4N4p.1000.0.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 8 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=1000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.1000.0.pqgt1t2.dat-s.gz">hubbard_X4N4p.1000.0.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.1000.0.pqgt1t2.result.gz">hubbard_X4N4p.1000.0.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 8 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=1000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.1000.0.pqgt1t2p.dat-s.gz">hubbard_X4N4p.1000.0.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.1000.0.pqgt1t2p.result.gz">hubbard_X4N4p.1000.0.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 8 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=1000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2'</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.10000.0.pqg.dat-s.gz">hubbard_X4N4p.10000.0.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.10000.0.pqg.result.gz">hubbard_X4N4p.10000.0.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 8 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=10000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQG</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.10000.0.pqgt1.dat-s.gz">hubbard_X4N4p.10000.0.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.10000.0.pqgt1.result.gz">hubbard_X4N4p.10000.0.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 8 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=10000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.10000.0.pqgt1t2.dat-s.gz">hubbard_X4N4p.10000.0.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.10000.0.pqgt1t2.result.gz">hubbard_X4N4p.10000.0.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 8 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=10000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.10000.0.pqgt1t2p.dat-s.gz">hubbard_X4N4p.10000.0.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.10000.0.pqgt1t2p.result.gz">hubbard_X4N4p.10000.0.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 8 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=10000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2'</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.100000.0.pqg.dat-s.gz">hubbard_X4N4p.100000.0.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.100000.0.pqg.result.gz">hubbard_X4N4p.100000.0.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 8 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=100000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQG</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.100000.0.pqgt1.dat-s.gz">hubbard_X4N4p.100000.0.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.100000.0.pqgt1.result.gz">hubbard_X4N4p.100000.0.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 8 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=100000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.100000.0.pqgt1t2.dat-s.gz">hubbard_X4N4p.100000.0.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.100000.0.pqgt1t2.result.gz">hubbard_X4N4p.100000.0.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 8 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=100000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.100000.0.pqgt1t2p.dat-s.gz">hubbard_X4N4p.100000.0.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X4N4p.100000.0.pqgt1t2p.result.gz">hubbard_X4N4p.100000.0.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 8 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=100000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2'</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.1000.0.pqg.dat-s.gz">hubbard_X6N6p.1000.0.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.1000.0.pqg.result.gz">hubbard_X6N6p.1000.0.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 12 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=1000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.1000.0.pqgt1.dat-s.gz">hubbard_X6N6p.1000.0.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.1000.0.pqgt1.result.gz">hubbard_X6N6p.1000.0.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 12 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=1000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.1000.0.pqgt1t2.dat-s.gz">hubbard_X6N6p.1000.0.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.1000.0.pqgt1t2.result.gz">hubbard_X6N6p.1000.0.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 12 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=1000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.1000.0.pqgt1t2p.dat-s.gz">hubbard_X6N6p.1000.0.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.1000.0.pqgt1t2p.result.gz">hubbard_X6N6p.1000.0.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 12 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=1000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2'</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.10000.0.pqg.dat-s.gz">hubbard_X6N6p.10000.0.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.10000.0.pqg.result.gz">hubbard_X6N6p.10000.0.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 12 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=10000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQG</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.10000.0.pqgt1.dat-s.gz">hubbard_X6N6p.10000.0.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.10000.0.pqgt1.result.gz">hubbard_X6N6p.10000.0.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 12 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=10000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.10000.0.pqgt1t2.dat-s.gz">hubbard_X6N6p.10000.0.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.10000.0.pqgt1t2.result.gz">hubbard_X6N6p.10000.0.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 12 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=10000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.10000.0.pqgt1t2p.dat-s.gz">hubbard_X6N6p.10000.0.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.10000.0.pqgt1t2p.result.gz">hubbard_X6N6p.10000.0.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 12 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=10000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2'</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.100000.0.pqg.dat-s.gz">hubbard_X6N6p.100000.0.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.100000.0.pqg.result.gz">hubbard_X6N6p.100000.0.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 12 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=100000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQG</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.100000.0.pqgt1.dat-s.gz">hubbard_X6N6p.100000.0.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.100000.0.pqgt1.result.gz">hubbard_X6N6p.100000.0.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 12 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=100000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.100000.0.pqgt1t2.dat-s.gz">hubbard_X6N6p.100000.0.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.100000.0.pqgt1t2.result.gz">hubbard_X6N6p.100000.0.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 12 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=100000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.100000.0.pqgt1t2p.dat-s.gz">hubbard_X6N6p.100000.0.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X6N6p.100000.0.pqgt1t2p.result.gz">hubbard_X6N6p.100000.0.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 12 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=100000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2'</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.1000.0.pqg.dat-s.gz">hubbard_X8N8p.1000.0.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.1000.0.pqg.result.gz">hubbard_X8N8p.1000.0.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 16 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=1000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQG</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.1000.0.pqgt1.dat-s.gz">hubbard_X8N8p.1000.0.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.1000.0.pqgt1.result.gz">hubbard_X8N8p.1000.0.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 16 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=1000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.1000.0.pqgt1t2.dat-s.gz">hubbard_X8N8p.1000.0.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.1000.0.pqgt1t2.result.gz">hubbard_X8N8p.1000.0.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 16 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=1000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.1000.0.pqgt1t2p.dat-s.gz">hubbard_X8N8p.1000.0.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.1000.0.pqgt1t2p.result.gz">hubbard_X8N8p.1000.0.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 16 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=1000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2'</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.10000.0.pqg.dat-s.gz">hubbard_X8N8p.10000.0.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.10000.0.pqg.result.gz">hubbard_X8N8p.10000.0.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 16 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=10000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQG</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.10000.0.pqgt1.dat-s.gz">hubbard_X8N8p.10000.0.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.10000.0.pqgt1.result.gz">hubbard_X8N8p.10000.0.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 16 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=10000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.10000.0.pqgt1t2.dat-s.gz">hubbard_X8N8p.10000.0.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.10000.0.pqgt1t2.result.gz">hubbard_X8N8p.10000.0.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 16 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=10000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.10000.0.pqgt1t2p.dat-s.gz">hubbard_X8N8p.10000.0.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.10000.0.pqgt1t2p.result.gz">hubbard_X8N8p.10000.0.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 16 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=10000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2'</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.100000.0.pqg.dat-s.gz">hubbard_X8N8p.100000.0.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.100000.0.pqg.result.gz">hubbard_X8N8p.100000.0.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 16 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=100000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQG</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.100000.0.pqgt1.dat-s.gz">hubbard_X8N8p.100000.0.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.100000.0.pqgt1.result.gz">hubbard_X8N8p.100000.0.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 16 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=100000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.100000.0.pqgt1t2.dat-s.gz">hubbard_X8N8p.100000.0.pqgt1t2.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.100000.0.pqgt1t2.result.gz">hubbard_X8N8p.100000.0.pqgt1t2.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 16 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=100000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2</P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.100000.0.pqgt1t2p.dat-s.gz">hubbard_X8N8p.100000.0.pqgt1t2p.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="hubbard_X8N8p.100000.0.pqgt1t2p.result.gz">hubbard_X8N8p.100000.0.pqgt1t2p.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 16 </P> </TD>
-<TD WIDTH="16%">        <P> U/t=100000.0</P> </TD>
-<TD WIDTH="16%">        <P> PQGT1T2'</P> </TD>
-</TR>
-</TABLE>
+|       Problems (dat-s, gzip'ed)          |           result (gzip'ed)                | rank |   U/t    | comment  |
+| ---------------------------------------- | ----------------------------------------- | :--: | -------: | -------- |
+| hubbard_X4N4p.1000.0.pqg.dat-s.gz        | hubbard_X4N4p.1000.0.pqg.result.gz        |   8  |   1000.0 | PQG      |
+| hubbard_X4N4p.1000.0.pqgt1.dat-s.gz      | hubbard_X4N4p.1000.0.pqgt1.result.gz      |   8  |   1000.0 | PQGT1    |
+| hubbard_X4N4p.1000.0.pqgt1t2.dat-s.gz    | hubbard_X4N4p.1000.0.pqgt1t2.result.gz    |   8  |   1000.0 | PQGT1T2  |
+| hubbard_X4N4p.1000.0.pqgt1t2p.dat-s.gz   | hubbard_X4N4p.1000.0.pqgt1t2p.result.gz   |   8  |   1000.0 | PQGT1T2' |
+| hubbard_X4N4p.10000.0.pqg.dat-s.gz       | hubbard_X4N4p.10000.0.pqg.result.gz       |   8  |  10000.0 | PQG      |
+| hubbard_X4N4p.10000.0.pqgt1.dat-s.gz     | hubbard_X4N4p.10000.0.pqgt1.result.gz     |   8  |  10000.0 | PQGT1    |
+| hubbard_X4N4p.10000.0.pqgt1t2.dat-s.gz   | hubbard_X4N4p.10000.0.pqgt1t2.result.gz   |   8  |  10000.0 | PQGT1T2  |
+| hubbard_X4N4p.10000.0.pqgt1t2p.dat-s.gz  | hubbard_X4N4p.10000.0.pqgt1t2p.result.gz  |   8  |  10000.0 | PQGT1T2' |
+| hubbard_X4N4p.100000.0.pqg.dat-s.gz      | hubbard_X4N4p.100000.0.pqg.result.gz      |   8  | 100000.0 | PQG      |
+| hubbard_X4N4p.100000.0.pqgt1.dat-s.gz    | hubbard_X4N4p.100000.0.pqgt1.result.gz    |   8  | 100000.0 | PQGT1    |
+| hubbard_X4N4p.100000.0.pqgt1t2.dat-s.gz  | hubbard_X4N4p.100000.0.pqgt1t2.result.gz  |   8  | 100000.0 | PQGT1T2  |
+| hubbard_X4N4p.100000.0.pqgt1t2p.dat-s.gz | hubbard_X4N4p.100000.0.pqgt1t2p.result.gz |   8  | 100000.0 | PQGT1T2' |
+| hubbard_X6N6p.1000.0.pqg.dat-s.gz        | hubbard_X6N6p.1000.0.pqg.result.gz        |  12  |   1000.0 | PQG      |
+| hubbard_X6N6p.1000.0.pqgt1.dat-s.gz      | hubbard_X6N6p.1000.0.pqgt1.result.gz      |  12  |   1000.0 | PQGT1    |
+| hubbard_X6N6p.1000.0.pqgt1t2.dat-s.gz    | hubbard_X6N6p.1000.0.pqgt1t2.result.gz    |  12  |   1000.0 | PQGT1T2  |
+| hubbard_X6N6p.1000.0.pqgt1t2p.dat-s.gz   | hubbard_X6N6p.1000.0.pqgt1t2p.result.gz   |  12  |   1000.0 | PQGT1T2' |
+| hubbard_X6N6p.10000.0.pqg.dat-s.gz       | hubbard_X6N6p.10000.0.pqg.result.gz       |  12  |  10000.0 | PQG      |
+| hubbard_X6N6p.10000.0.pqgt1.dat-s.gz     | hubbard_X6N6p.10000.0.pqgt1.result.gz     |  12  |  10000.0 | PQGT1    |
+| hubbard_X6N6p.10000.0.pqgt1t2.dat-s.gz   | hubbard_X6N6p.10000.0.pqgt1t2.result.gz   |  12  |  10000.0 | PQGT1T2  |
+| hubbard_X6N6p.10000.0.pqgt1t2p.dat-s.gz  | hubbard_X6N6p.10000.0.pqgt1t2p.result.gz  |  12  |  10000.0 | PQGT1T2' |
+| hubbard_X6N6p.100000.0.pqg.dat-s.gz      | hubbard_X6N6p.100000.0.pqg.result.gz      |  12  | 100000.0 | PQG      |
+| hubbard_X6N6p.100000.0.pqgt1.dat-s.gz    | hubbard_X6N6p.100000.0.pqgt1.result.gz    |  12  | 100000.0 | PQGT1    |
+| hubbard_X6N6p.100000.0.pqgt1t2.dat-s.gz  | hubbard_X6N6p.100000.0.pqgt1t2.result.gz  |  12  | 100000.0 | PQGT1T2  |
+| hubbard_X6N6p.100000.0.pqgt1t2p.dat-s.gz | hubbard_X6N6p.100000.0.pqgt1t2p.result.gz |  12  | 100000.0 | PQGT1T2' |
+| hubbard_X8N8p.1000.0.pqg.dat-s.gz        | hubbard_X8N8p.1000.0.pqg.result.gz        |  16  |   1000.0 | PQG      |
+| hubbard_X8N8p.1000.0.pqgt1.dat-s.gz      | hubbard_X8N8p.1000.0.pqgt1.result.gz      |  16  |   1000.0 | PQGT1    |
+| hubbard_X8N8p.1000.0.pqgt1t2.dat-s.gz    | hubbard_X8N8p.1000.0.pqgt1t2.result.gz    |  16  |   1000.0 | PQGT1T2  |
+| hubbard_X8N8p.1000.0.pqgt1t2p.dat-s.gz   | hubbard_X8N8p.1000.0.pqgt1t2p.result.gz   |  16  |   1000.0 | PQGT1T2' |
+| hubbard_X8N8p.10000.0.pqg.dat-s.gz       | hubbard_X8N8p.10000.0.pqg.result.gz       |  16  |  10000.0 | PQG      |
+| hubbard_X8N8p.10000.0.pqgt1.dat-s.gz     | hubbard_X8N8p.10000.0.pqgt1.result.gz     |  16  |  10000.0 | PQGT1    |
+| hubbard_X8N8p.10000.0.pqgt1t2.dat-s.gz   | hubbard_X8N8p.10000.0.pqgt1t2.result.gz   |  16  |  10000.0 | PQGT1T2  |
+| hubbard_X8N8p.10000.0.pqgt1t2p.dat-s.gz  | hubbard_X8N8p.10000.0.pqgt1t2p.result.gz  |  16  |  10000.0 | PQGT1T2' |
+| hubbard_X8N8p.100000.0.pqg.dat-s.gz      | hubbard_X8N8p.100000.0.pqg.result.gz      |  16  | 100000.0 | PQG      |
+| hubbard_X8N8p.100000.0.pqgt1.dat-s.gz    | hubbard_X8N8p.100000.0.pqgt1.result.gz    |  16  | 100000.0 | PQGT1    |
+| hubbard_X8N8p.100000.0.pqgt1t2.dat-s.gz  | hubbard_X8N8p.100000.0.pqgt1t2.result.gz  |  16  | 100000.0 | PQGT1T2  |
+| hubbard_X8N8p.100000.0.pqgt1t2p.dat-s.gz | hubbard_X8N8p.100000.0.pqgt1t2p.result.gz |  16  | 100000.0 | PQGT1T2' |
