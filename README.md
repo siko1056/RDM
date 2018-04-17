@@ -1,83 +1,74 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<HTML lang="en">
-<HEAD>
-        <LINK REV="MADE" HREF="mailto:maho@riken.jp">
-        <LINK REL="NEXT" HREF="index.html">
-	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
-	<TITLE>THE RDM METHOD PROBLEMS IN SDPA SPARSE FORMAT</TITLE>
-</HEAD>
-<BODY>
-<h1>THE RDM METHOD PROBLEMS IN SDPA SPARSE FORMAT</h1>
-<h2>INTRODUCTION</h2>
-The RDM method is promising method, using 2-RDM as a basic variable and minimize the total energy which
-is a linear to the Hamiltonian with respect to so called N-representability conditions. Since N-representability condition is known
-to be very hard to solve, we pose approximate N-representability conditions like P, Q, G, T1, T2 or T2'.
-The total energies by this method is comprable to CCSD(T), and these SDPs are really huge, and are challenge in both mathematical programming and chemistry.<br>
+# The RDM method problems in SDPA sparse format
 
-<font size="5" color="#ff0000">Try them with your SDP solver!</font>
-Format is the SDPA's sparse format.
+> This GitHub repository is a "modern" presentation of the original RDM
+> library by Nakata, Maho <[maho@riken.jp](mailto:maho@riken.jp) or
+> [chat95@mac.com](mailto:chat95@mac.com) hosted at
+> http://nakatamaho.riken.jp/rdmsdp/sdp_rdm.html.
+
+## Introduction
+
+The RDM method is promising method, using 2-RDM as a basic variable and
+minimize the total energy which is a linear to the Hamiltonian with respect to
+so called N-representability conditions.  Since N-representability condition is
+known to be very hard to solve, we pose approximate N-representability
+conditions like `P`, `Q`, `G`, `T1`, `T2`, or `T2'`.  The total energies by
+this method is comparable to *CCSD(T)*, and these SDPs are really huge, and are
+challenge in both mathematical programming and chemistry.
+
+**Try them with your SDP solver!** Format is the SDPA's sparse format.
 You can solve problems with your SDP solver, which are available as
-<a href="http://sdpa.indsys.chuo-u.ac.jp/sdpa/">SDPA, SDPA-GMP</a>,
-<a href="http://sedumi.ie.lehigh.edu/">SeDuMi</a>,
-<a href="http://infohost.nmt.edu/~borchers/csdp.html">CSDP</a>, and <a href="http://www.math.nus.edu.sg/~mattohkc/sdpt3.html">SDTP3</a> etc.
+[SDPA, SDPA-GMP](http://sdpa.indsys.chuo-u.ac.jp/sdpa/),
+[SeDuMi](http://sedumi.ie.lehigh.edu/),
+[CSDP](http://infohost.nmt.edu/~borchers/csdp.html), and
+[SDTP3](http://www.math.nus.edu.sg/~mattohkc/sdpt3.html) etc.
 
-<h2>NOTES</h2>
-All files are gzip'ed to reduce the size. For molecules' case you should add the core energy to the optimal to reproduce the results.
-The rank is the twice of number of molecular orbitals and define the size of the problems. If the rank (twice # of MO)
-becomes bigger, problem size becomes bigger. Not all the results of 1D hubbard model are uploaded, also I recalculated.
-For the Hubbard models, you may need multiple precision version of SDP solver, like <a href="http://sdpa.indsys.chuo-u.ac.jp/sdpa/">SDPA-GMP, SDPA-QD or SDPA-DD</a>.
+## Notes
 
-<h2>All data in one file</h2>
-<a href="http://nakatamaho.riken.jp/rdmsdp/t2p.molecules.20170504.tar.xz">t2p.molecules.20170504.tar.xz</a>
+All files are gzip'ed to reduce the size.  For molecules' case you should add
+the core energy to the optimal to reproduce the results.  The rank is the twice
+of number of molecular orbitals and define the size of the problems.  If the
+rank (twice # of MO) becomes bigger, problem size becomes bigger.  Not all the
+results of 1D hubbard model are uploaded, also I recalculated.  For the Hubbard
+models, you may need multiple precision version of SDP solver, like
+[SDPA-GMP, SDPA-QD, or SDPA-DD](http://sdpa.indsys.chuo-u.ac.jp/sdpa/).
+
+## All data in one file
+
+- [t2p.molecules.20170504.tar.xz](http://nakatamaho.riken.jp/rdmsdp/t2p.molecules.20170504.tar.xz)
 
 
-<h2>CITATIONS (CITATION COUNT BY THE WEB OF SCIENCE)</h2>
-<ul>
-Problems:
-<li> Variational calculation of second-order reduced density matrices by strong N-representability conditions and an accurate semidefinite programming solver
-<blockquote>
-Maho Nakata, Bastiaan J. Braams, Katsuki Fujisawa, Mituhiro Fukuda, Jerome K. Percus, Makoto Yamashita, and Zhengji Zhao<br>
-<a href="http://link.aip.org/link/?JCPSA6/128/164113/1">Journal of chemical physics 128, 16 164113 (2008)</a> (5)<br>
-DOI:10.1063/1.2911696
-</blockquote>
-Basics:
-<li>Variational calculations of fermion second-order reduced density matrices by semidefinite programming algorithm.
-<blockquote>
-<em>Maho Nakata</em>, Hiroshi Nakatsuji, Masahiro Ehara, Mituhiro Fukuda, Kazuhide Nakata, and Katsuki Fujisawa<br>
-<a href="http://link.aip.org/link/?jcp/114/8282">Journal of Chemical Physics, 114, 8282-8292 (2001)</a> (96)
-<br>
-DOI:10.1063/1.1360199
-</blockquote>
-</ul>
+## Citations (Citation count by the web of science)
 
-<h2>SDP PROBLEM FILES IN SDPA SPARCE FORMAT</h2>
-<DIV ALIGN="CENTER"><h2>ATOMS and MOLECULES</h2></DIV>
-Randomly chosen from <a href="http://link.aip.org/link/?JCPSA6/128/164113/1">Journal of chemical physics 128, 16 164113 (2008)</a>. You should add the core energy to the optimal to reproduce the paper's results.
-<DIV ALIGN="CENTER">
-<TABLE WIDTH="80%" BORDER=1 CELLPADDING=2 CELLSPACING=2>
-<TR VALIGN=TOP>
-<TD WIDTH="16%"><p>PROBLEMS (dat-s, gzip'ed) </p></TD>
-<TD WIDTH="16%"><p>result (gzip'ed) </p></TD>
-<TD WIDTH="16%"><p>rank</p></TD>
-<TD WIDTH="16%"><p>core energy</p></TD>
-<TD WIDTH="16%"><P>comment</P>
-</TD>
-</TR>
+- Problems: Variational calculation of second-order reduced density matrices
+  by strong N-representability conditions and an accurate semidefinite
+  programming solver
 
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="C.3P.DZ.pqg.dat-s.gz">C.3P.DZ.pqg.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="C.3P.DZ.pqg.result.gz">C.3P.DZ.pqg.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 20 </P> </TD>
-<TD WIDTH="16%">        <P> 0.0 </P> </TD>
-<TD WIDTH="16%">        <P> PQG </P> </TD>
-</TR>
-<TR VALIGN=TOP>
-<TD WIDTH="16%">        <P><a href="C.3P.DZ.pqgt1.dat-s.gz">C.3P.DZ.pqgt1.dat-s.gz</a></P> </TD>
-<TD WIDTH="16%">        <P><a href="C.3P.DZ.pqgt1.result.gz">C.3P.DZ.pqgt1.result.gz</a></P> </TD>
-<TD WIDTH="16%">        <P> 20 </P> </TD>
-<TD WIDTH="16%">        <P> 0.0 </P> </TD>
-<TD WIDTH="16%">        <P> PQGT1 </P> </TD>
-</TR>
+  > <a id="ref1"></a>
+  > Maho Nakata, Bastiaan J. Braams, Katsuki Fujisawa, Mituhiro Fukuda,
+  > Jerome K. Percus, Makoto Yamashita, and Zhengji Zhao. *Journal of chemical
+  > physics*, **128**, 16 164113 (2008) (5)
+  > [DOI: 10.1063/1.2911696](https://doi.org/10.1063/1.2911696)
+
+- Basics: Variational calculations of fermion second-order reduced density
+  matrices by semidefinite programming algorithm.
+
+  > <a id="ref2"></a>
+  > Maho Nakata, Hiroshi Nakatsuji, Masahiro Ehara, Mituhiro Fukuda,
+  > Kazuhide Nakata, and Katsuki Fujisawa. *Journal of Chemical Physics*,
+  > **114**, 8282-8292 (2001) (96)
+  > [DOI: 10.1063/1.1360199](https://doi.org/10.1063/1.1360199)
+
+## SDP problem files in SDPA sparse format
+
+### Atoms and molecules
+
+Randomly chosen from [[1]](#ref1).  You should add the core energy to the
+optimal to reproduce the paper's results.
+
+| Problems (dat-s, gzip'ed) |     result (gzip'ed)    | rank | core energy | comment |
+| ------------------------- | ----------------------- | :--: | :---------: | ------- |
+| C.3P.DZ.pqg.dat-s.gz      | C.3P.DZ.pqg.result.gz   |  20  |         0.0 |     PQG |
+| C.3P.DZ.pqgt1.dat-s.gz    | C.3P.DZ.pqgt1.result.gz |  20  |         0.0 |   PQGT1 |
 <TR VALIGN=TOP>
 <TD WIDTH="16%">        <P><a href="C.3P.DZ.pqgt1t2.dat-s.gz">C.3P.DZ.pqgt1t2.dat-s.gz</a></P> </TD>
 <TD WIDTH="16%">        <P><a href="C.3P.DZ.pqgt1t2.result.gz">C.3P.DZ.pqgt1t2.result.gz</a></P> </TD>
@@ -294,12 +285,13 @@ Randomly chosen from <a href="http://link.aip.org/link/?JCPSA6/128/164113/1">Jou
 </TR>
 
 
-</TABLE>
-</DIV>
+### 1D Hubbard model with high correlation limits
 
-<DIV ALIGN="CENTER"><h2>1D HUBBARD MODEL WITH HIGH CORRELATION LIMITS</h2></DIV>
-From <a href="http://link.aip.org/link/?JCPSA6/128/164113/1">Journal of chemical physics 128, 16 164113 (2008)</a>. Note not all results have been uploaded, and may not all problems are solved in the referenced paper. You may need multiple precision version of SDP solver like <a href="http://sdpa.indsys.chuo-u.ac.jp/sdpa/">SDPA-GMP, SDPA-QD or SDPA-DD</a>.
-<DIV ALIGN="CENTER">
+From [[1]](#ref1).  Note not all results have been uploaded, and may not all
+problems are solved in the referenced paper.  You may need multiple precision
+version of SDP solver like
+[SDPA-GMP, SDPA-QD, or SDPA-DD](http://sdpa.indsys.chuo-u.ac.jp/sdpa/).
+
 <TABLE WIDTH="80%" BORDER=1 CELLPADDING=2 CELLSPACING=2>
 <TR VALIGN=TOP>
 <TD WIDTH="16%"><p>PROBLEMS (dat-s, gzip'ed) </p></TD>
@@ -563,31 +555,3 @@ From <a href="http://link.aip.org/link/?JCPSA6/128/164113/1">Journal of chemical
 <TD WIDTH="16%">        <P> PQGT1T2'</P> </TD>
 </TR>
 </TABLE>
-</DIV>
-</DIV>
-
-<h2>CITATIONS (CITATION COUNT BY THE WEB OF SCIENCE)</h2>
-<ul>
-Problems:
-<li> Variational calculation of second-order reduced density matrices by strong N-representability conditions and an accurate semidefinite programming solver
-<blockquote>
-Maho Nakata, Bastiaan J. Braams, Katsuki Fujisawa, Mituhiro Fukuda, Jerome K. Percus, Makoto Yamashita, and Zhengji Zhao<br>
-<a href="http://link.aip.org/link/?JCPSA6/128/164113/1">Journal of chemical physics 128, 16 164113 (2008)</a> (5)<br>
-DOI:10.1063/1.2911696
-</blockquote>
-Basics:
-<li>Variational calculations of fermion second-order reduced density matrices by semidefinite programming algorithm.
-<blockquote>
-<em>Maho Nakata</em>, Hiroshi Nakatsuji, Masahiro Ehara, Mituhiro Fukuda, Kazuhide Nakata, and Katsuki Fujisawa<br>
-<a href="http://link.aip.org/link/?jcp/114/8282">Journal of Chemical Physics, 114, 8282-8292 (2001)</a> (96)
-<br>
-DOI:10.1063/1.1360199
-</blockquote>
-</ul>
-
-<h2>CORRESPONDANCE</h2>
-Nakata, Maho: e-mail: <a href="mailto:maho@riken.jp">maho@riken.jp</a> or <a href="mailto:chat95@mac.com">chat95@mac.com</a>
-<hr>
-<pre>$Id: $</pre>
-</BODY>
-</HTML>
